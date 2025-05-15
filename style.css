@@ -1,0 +1,105 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor1: cadetblue;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+/* cabeça */
+
+header {
+    background-color: var(--cor1);
+    padding-top: 20px;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+nav > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: #3c5d5fb0;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 15px 10px;
+}
+
+/* corpo */
+
+main {
+    padding: 10px;
+    height: auto;
+}
+
+main .mudadecor {
+    margin: auto;
+    background-color: gray;
+    margin-top: 10px;
+
+    width: 105px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+main h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+main p {
+    text-indent: 30px;
+    margin-bottom: 10px;
+}
+
+main section {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div {
+    background-color: gray;
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+
+    display: inline-block;
+}
+
+article {
+    display: flex;
+}
+
+.valor {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+/* roda pé */
+
+footer {
+    background-color: var(--cor1);
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+}
