@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interatividade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,36 +17,107 @@
         <a href="#">Contato</a>
         <a href="#">Ajuda</a>
     </nav>
-    <main>
-        <aside class="mudadecor" id="rescor" onclick="trocacor()">
-            Modo Escuro
-        </aside>
-        <h1>Conheça o novo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, debitis corrupti. Necessitatibus atque quod cupiditate perspiciatis sint laudantium nisi obcaecati, rerum aliquid veniam! Neque voluptas debitis ab nam recusandae odit?</p>
-        <br>
-        <section>
-            <div class="produt">
-                <h2>Azul</h2>
-                <article>
-                    <button>-</button>
-                    <div class="valor"></div>
-                    <button>+</button>
-                </article>
-            </div>
+    <div class="principal">
+        <div class="botao">
+            <button class="mudacor" id="mudacor" onclick="trocacor()">Modo Escuro</button>
+        </div>
+        
+        <main>
+            <section>
+                <h1>Conheça o novo</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, debitis corrupti. Necessitatibus atque quod cupiditate perspiciatis sint laudantium nisi obcaecati, rerum aliquid veniam! Neque voluptas debitis ab nam recusandae odit?</p>
+            </section>
 
-            <div class="produt">
-                <h2>Vermelho</h2>
-            </div>
+            <section class="produto">
+                <div class="item">
+                    <h2>Ouro</h2>
 
-            <div class="produt">
-                <h2>Branco</h2>
-            </div>
-        </section>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt architecto odio hic ex. Eum nulla dolor sapiente quas doloribus neque deserunt blanditiis, ipsa praesentium, cupiditate maxime eligendi quod quisquam porro!</p>
-    </main>
+                    <div class="img-produto">
+                        <img src="" alt="ouro-img">
+                    </div>
+
+                    <div class="operacao">
+                        <button class="mais">+</button>
+                        <div class="area"></div>
+                        <button class="menos">-</button>
+                    </div>
+
+                    <div class="comprar">
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h2>Diamante</h2>
+
+                    <div class="img-produto">
+                        <img src="" alt="Diamante-img">
+                    </div>
+
+                    <div class="operacao">
+                        <button class="mais">+</button>
+                        <div class="area"></div>
+                        <button class="menos">-</button>
+                    </div>
+
+                    <div class="comprar">
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h2>Rubi</h2>
+
+                    <div class="img-produto">
+                        <img src="" alt="Rubi-img">
+                    </div>
+
+                    <div class="operacao">
+                        <button class="mais">+</button>
+                        <div class="area"></div>
+                        <button class="menos">-</button>
+                    </div>
+
+                    <div class="comprar">
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt architecto odio hic ex. Eum nulla dolor sapiente quas doloribus neque deserunt blanditiis, ipsa praesentium, cupiditate maxime eligendi quod quisquam porro!</p>
+            </section>
+        </main>
+    </div>
     <footer>
-        <p>criado por @raphinha296</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Logo</h1>
+            </div>
+            <ul class="footer-list">
+                <li><h3>Blog</h3></li>
+                <li><a href="#" class="footer-link">Texto</a></li>
+                <li><a href="#" class="footer-link">Texto</a></li>
+                <li><a href="#" class="footer-link">Texto</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><h3>Produts</h3></li>
+                <li><a href="#" class="footer-link">Texto</a></li>
+                <li><a href="#" class="footer-link">Texto</a></li>
+                <li><a href="#" class="footer-link">Texto</a></li>
+            </ul>
+            <div class="footer-social-media">
+                <h3>Sociais</h3>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &#169
+            2025 all rights reserved
+        </div>
     </footer>
     <script src="style.js"></script>
 </body>
