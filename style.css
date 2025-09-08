@@ -89,6 +89,8 @@ main section {
 /*section produto*/
 section.produto {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div.item {
@@ -96,6 +98,7 @@ div.item {
     width: 200px;
     height: 250px;
     border: 1px solid black;
+    margin: 1px;
 }
 
 div.item .img-produto {
@@ -126,7 +129,7 @@ div.operacao button.mais, button.menos {
 div.operacao div.area {
     background-color: white;
     width: 40px;
-    height: 25px;
+    height: 23px;
 }
 
 div.comprar {
@@ -142,6 +145,10 @@ div.comprar button.botao-comprar {
     font-weight: bold;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+div.comprar button.botao-comprar:hover {
+    background-color: #066306ee;
 }
 
 /* roda pé */
