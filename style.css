@@ -14,7 +14,6 @@ body {
 }
 
 /* cabeça */
-
 header {
     background-color: var(--cor1);
     padding-top: 20px;
@@ -43,12 +42,11 @@ nav {
 }
 
 /* corpo */
-
 div.principal {
     margin-top: 10px;
 }
 
-/*botao*/
+/*botao de cor*/
 div.botao {
     align-items: center;
     justify-content: center;
@@ -65,13 +63,10 @@ button.mudacor {
 }
 
 button.mudacor:hover {
-    background-color: #5a5a5a;
-    width: 115px;
-    height: 30px;
+    box-shadow: 0px 0px 10px 1px #0f0f0f;
 }
 
 /*main*/
-
 main h1 {
     text-align: center;
     padding: 10px;
@@ -93,25 +88,30 @@ section.produto {
     justify-content: center;
 }
 
+/*container dos 3*/
 div.item {
-    background-color: gray;
+    background-color: #b9b9b9;
     width: 200px;
     height: 250px;
     border: 1px solid black;
-    margin: 1px;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+/*dentro do content*/
+div.item h2 {
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 1px 1px 10px #0f0f0f;
 }
 
 div.item .img-produto {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-div.item h2 {
-    text-align: center;
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
 }
 
 div.operacao {
@@ -124,12 +124,22 @@ div.operacao button.mais, button.menos {
     width: 25px;
     height: 25px;
     font-size: large;
+    color: #757575;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+div.operacao button.mais:hover, button.menos:hover {
+    background-color: #a8a8a8;
 }
 
 div.operacao div.area {
     background-color: white;
     width: 40px;
     height: 23px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 div.comprar {
@@ -146,13 +156,12 @@ div.comprar button.botao-comprar {
     border-radius: 10px;
     border: 1px solid black;
 }
-
 div.comprar button.botao-comprar:hover {
     background-color: #066306ee;
+    box-shadow: 1px 1px 10px #343535;
 }
 
 /* roda pé */
-
 footer {
     margin-top: 10px;
 }
@@ -195,16 +204,35 @@ footer div.footer-copyright {
     padding-bottom: 30px;
 }
 
+@media screen and (max-width: 360px) {
+    footer div.footer-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.produto {
+        margin: 2px;
+    }
+
+    div.item {
+        width: 200px;
+        height: 200px;
+    }
+
+    div.item h2 {
+        font-size: 19px;
+    }
+
+    div.operacao button.mais, button.menos {
+        width: 25px;
+        height: 25px;
+        margin: 0px 5px;
+    }
+
+}
+
 @media screen and (max-width: 750px) {
     footer div.footer-content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2em;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    footer div.footer-content {
-        grid-template-columns: repeat(1, 1fr);
-        
     }
 }
